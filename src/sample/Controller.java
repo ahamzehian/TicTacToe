@@ -86,6 +86,7 @@ public class Controller {
     public void cancelButtonOnAction(){
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
+        System.out.println("Game was closed!");
     }
 
     @FXML
@@ -98,6 +99,7 @@ public class Controller {
             button.setText(" ");
             button.setDisable(false);
         }
+        System.out.println("A new game was launched!");
     }
 
     private boolean gameIsOver(){
